@@ -10,9 +10,9 @@ window.onload = function() {
   console.log("Hello Rigo from the console!");
 };
 
-document.querySelector(".deck").classList.add(generateRandomSuit());
-document.querySelector(".number").innerHTML = generateRandomNumber();
-document.querySelector("#button");
+document.getElementsByTagName(".deck").innerHTML(generateRandomDeck());
+document.getElementsByTagName(".number").innerHTML = generateRandomNumber();
+document.getElementsByTagName("#button").innerHTML;
 
 let generateRandomNumber = () => {
   let number = [
@@ -30,13 +30,13 @@ let generateRandomNumber = () => {
     "Q",
     "K"
   ];
-  let indexN = Math.floor(Math.random() * number.length);
-  return number[indexN];
+  let FirstNumber = Math.floor(Math.random() * number.length);
+  return number[FirstNumber];
 };
 
-let generateRandomSuit = () => {
-  let deck = ["♥", "♣", "♦", "♠"];
-  let indexS = Math.floor(Math.random() * deck.length);
+let generateRandomDeck = () => {
+  let Deck = ["♥", "♣", "♦", "♠"];
+  let FirstDeck = Math.floor(Math.random() * Deck.length);
 
-  return deck[indexS];
+  return deck[FirstDeck];
 };
