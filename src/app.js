@@ -23,7 +23,7 @@ window.onload = function() {
       "10",
       "J",
       "Q",
-      "K",
+      "K"
     ];
     let FirstNumber = Math.floor(Math.random() * number.length);
     return number[FirstNumber];
@@ -61,9 +61,11 @@ window.onload = function() {
 
     if (randomdeck == "♦" || randomdeck == "♥") {
       document.getElementById("deck-top").style.color = "red";
+      document.getElementById("number").style.color = "red";
       document.getElementById("deck-bottom").style.color = "red";
     } else {
       document.getElementById("deck-top").style.color = "black";
+      document.getElementById("number").style.color = "black";
       document.getElementById("deck-bottom").style.color = "black";
     }
   });
